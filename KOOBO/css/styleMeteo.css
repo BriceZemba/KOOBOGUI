@@ -1,0 +1,162 @@
+/* Import Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background: #E3F2FD;
+}
+.header_section {
+  color: #05a57b;
+  padding: 20px 0;
+}
+.header_section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_section .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header_section .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.header_section .navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.header_section .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+.header_section .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #05a57b;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.header_section .navbar-nav .nav-link:hover {
+  color: #FFD700; /* Gold color for hover effect */
+}
+
+.container {
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+}
+.weather-input {
+  width: 550px;
+}
+.weather-input input {
+  height: 46px;
+  width: 100%;
+  outline: none;
+  font-size: 1.07rem;
+  padding: 0 17px;
+  margin: 10px 0 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.weather-input input:focus {
+  padding: 0 16px;
+  border: 2px solid #06c091;
+}
+.weather-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #BBBBBB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-input .separator::before {
+  content: "or";
+  color: #06c091;
+  font-size: 1.18rem;
+  padding: 0 15px;
+  margin-top: -4px;
+  background: #E3F2FD;
+}
+.weather-input button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  background: #06c091;
+  transition: 0.2s ease;
+}
+.weather-input .search-btn:hover {
+  background: #05a57b;
+}
+.weather-input .location-btn:hover {
+  background: #05a57b;
+}
+.weather-data {
+  width: 100%;
+}
+.weather-data .current-weather {
+  color: #fff;
+  background: #06c091;
+  border-radius: 5px;
+  padding: 20px 70px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.weather-data h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.current-weather .icon {
+  text-align: center;
+}
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+.current-weather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+.days-forecast h2 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.days-forecast .weather-cards {
+  display: flex;
+  gap: 20px;
+}
+.weather-cards .card {
+  color: #fff;
+  padding: 18px 16px;
+  list-style: none;
+  width: calc(100% / 5);
+  background: #06c091;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.weather-cards .card:hover {
+  transform: scale(1.2);
+}
+.weather-cards .card h3 {
+  font-size: 1.1rem;
+}
+.weather-cards .card img {
+  max-width: 80px;
+  margin-top: -5px;
+}
